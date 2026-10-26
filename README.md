@@ -1,5 +1,7 @@
 # Sheetmint
 
+[Open Sheetmint](https://sheetmint.vercel.app)
+
 **A place for every label.**
 
 Plan measured, two-line text label sheets in your browser. Mark scattered used positions on the first sheet, inspect each page, and export standalone SVG sheets without uploading your label text.
