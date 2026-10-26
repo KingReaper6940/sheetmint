@@ -17,6 +17,6 @@ export function positions(input){const s=normalize(input);return Array.from({len
 export function paginate(labels,input){
  const settings=normalize(input);if(!Array.isArray(labels)||labels.length<1||labels.length>300)throw new Error('Use 1–300 labels.');
  const slots=positions(settings),pages=[];let cursor=0;
- while(cursor<labels.length){const page=slots.map(pos=>{const used=pages.length===0&&settings.used.includes(pos.slot);return {...pos,used,label:used||cursor>=labels.length?null:labels[cursor++],index:used?null:cursor-1};});pages.push(page);if(pages.length>20)throw new Error('This job needs more than 20 sheets. Add positions or reduce labels.');}
+ while(cursor<labels.length){const page=slots.map(pos=>{const used=pages.length===0&&settings.used.includes(pos.slot);const label=used||cursor>=labels.length?null:labels[cursor++];return {...pos,used,label,index:label===null?null:cursor-1};});pages.push(page);if(pages.length>20)throw new Error('This job needs more than 20 sheets. Add positions or reduce labels.');}
  return {settings,paper:PAPERS[settings.paper],pages,labelCount:labels.length};
 }

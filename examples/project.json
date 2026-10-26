@@ -1,0 +1,21 @@
+{
+  "format": "sheetmint-v1",
+  "settings": {
+    "paper": "a4",
+    "cols": 3,
+    "rows": 8,
+    "width": 63,
+    "height": 33,
+    "left": 8,
+    "top": 10,
+    "gapX": 3,
+    "gapY": 2,
+    "font": 12,
+    "guides": true,
+    "used": [
+      0,
+      4
+    ]
+  },
+  "text": "Field notes\tShelf A · 01\nSketchbooks\tShelf A · 02\nInk & pens\tShelf B · 01\nPaper samples\tShelf B · 02\nReference cards\tShelf C · 01\nSpare parts\tShelf C · 02"
+}

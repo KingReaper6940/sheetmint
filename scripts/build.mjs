@@ -1,0 +1,4 @@
+import {mkdir,copyFile,rm} from 'node:fs/promises';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import {dirname,resolve} from 'node:path';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),out=resolve(root,'dist');if(dirname(out)!==root)throw new Error('Unexpected build path.');
+const files=['index.html','style.css','favicon.svg','src/layout.mjs','src/data.mjs','src/sheet.mjs','src/app.mjs'];for(const f of files.filter(f=>f.endsWith('.mjs')))execFileSync(process.execPath,['--check',resolve(root,f)]);
+await rm(out,{recursive:true,force:true});await mkdir(resolve(out,'src'),{recursive:true});for(const f of files)await copyFile(resolve(root,f),resolve(out,f));console.log('Built Sheetmint in dist/');

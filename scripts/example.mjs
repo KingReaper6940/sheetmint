@@ -1,0 +1,3 @@
+import {mkdir,writeFile} from 'node:fs/promises';import {DEFAULT} from '../src/layout.mjs';import {EXAMPLE,projectJSON} from '../src/data.mjs';import {makeJob,pageSVG,rulerSVG,ptMM} from '../src/sheet.mjs';
+const settings={...DEFAULT,used:[0,4]},job=makeJob(EXAMPLE,settings,(text,pt)=>text.length*ptMM(pt)*.6);
+await mkdir(new URL('../examples/',import.meta.url),{recursive:true});for(const [name,text] of [['project.json',projectJSON(settings,EXAMPLE)],['sheet.svg',pageSVG(job,0)],['scale-check.svg',rulerSVG(job.paper)],['placements.json',JSON.stringify(job,null,2)+'\n']])await writeFile(new URL('../examples/'+name,import.meta.url),text);console.log('Generated fictional example sheets; CLI fit measurements are approximate.');

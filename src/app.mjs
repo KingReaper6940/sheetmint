@@ -29,7 +29,7 @@ function render(){
 function sync(){for(const key of ['paper','cols','rows','width','height','left','top','gapX','gapY','font'])$(key).value=settings[key];$('guides').checked=settings.guides;usedGrid();render();}
 for(const [key,label,min,max,step] of [['cols','Columns',1,6,1],['rows','Rows',1,12,1],['width','Label width · mm',10,200,.1],['height','Label height · mm',8,150,.1],['left','Left margin · mm',0,100,.1],['top','Top margin · mm',0,100,.1],['gapX','Horizontal gap · mm',0,20,.1],['gapY','Vertical gap · mm',0,20,.1],['font','Font size · pt',8,24,.5]]){
  const field=el('label','',label),input=el('input');input.id=key;input.type='number';input.min=min;input.max=max;input.step=step;field.htmlFor=key;field.append(input);$('measurements').append(field);
- input.addEventListener('input',()=>{settings[key]=Number(input.value);if(key==='cols'||key==='rows'){settings.used=[];usedGrid();}render();});
+ input.addEventListener('input',()=>{settings[key]=input.value===''?NaN:Number(input.value);if(key==='cols'||key==='rows'){settings.used=[];usedGrid();}render();});
 }
 $('paper').addEventListener('input',()=>{settings.paper=$('paper').value;render();});
 $('guides').addEventListener('input',()=>{settings.guides=$('guides').checked;render();});

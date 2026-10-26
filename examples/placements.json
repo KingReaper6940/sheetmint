@@ -1,0 +1,288 @@
+{
+  "settings": {
+    "paper": "a4",
+    "cols": 3,
+    "rows": 8,
+    "width": 63,
+    "height": 33,
+    "left": 8,
+    "top": 10,
+    "gapX": 3,
+    "gapY": 2,
+    "font": 12,
+    "guides": true,
+    "used": [
+      0,
+      4
+    ]
+  },
+  "paper": {
+    "width": 210,
+    "height": 297,
+    "name": "A4"
+  },
+  "pages": [
+    [
+      {
+        "slot": 0,
+        "x": 8,
+        "y": 10,
+        "width": 63,
+        "height": 33,
+        "used": true,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 1,
+        "x": 74,
+        "y": 10,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Field notes",
+          "detail": "Shelf A · 01"
+        },
+        "index": 0
+      },
+      {
+        "slot": 2,
+        "x": 140,
+        "y": 10,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Sketchbooks",
+          "detail": "Shelf A · 02"
+        },
+        "index": 1
+      },
+      {
+        "slot": 3,
+        "x": 8,
+        "y": 45,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Ink & pens",
+          "detail": "Shelf B · 01"
+        },
+        "index": 2
+      },
+      {
+        "slot": 4,
+        "x": 74,
+        "y": 45,
+        "width": 63,
+        "height": 33,
+        "used": true,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 5,
+        "x": 140,
+        "y": 45,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Paper samples",
+          "detail": "Shelf B · 02"
+        },
+        "index": 3
+      },
+      {
+        "slot": 6,
+        "x": 8,
+        "y": 80,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Reference cards",
+          "detail": "Shelf C · 01"
+        },
+        "index": 4
+      },
+      {
+        "slot": 7,
+        "x": 74,
+        "y": 80,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": {
+          "title": "Spare parts",
+          "detail": "Shelf C · 02"
+        },
+        "index": 5
+      },
+      {
+        "slot": 8,
+        "x": 140,
+        "y": 80,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 9,
+        "x": 8,
+        "y": 115,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 10,
+        "x": 74,
+        "y": 115,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 11,
+        "x": 140,
+        "y": 115,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 12,
+        "x": 8,
+        "y": 150,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 13,
+        "x": 74,
+        "y": 150,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 14,
+        "x": 140,
+        "y": 150,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 15,
+        "x": 8,
+        "y": 185,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 16,
+        "x": 74,
+        "y": 185,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 17,
+        "x": 140,
+        "y": 185,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 18,
+        "x": 8,
+        "y": 220,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 19,
+        "x": 74,
+        "y": 220,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 20,
+        "x": 140,
+        "y": 220,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 21,
+        "x": 8,
+        "y": 255,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 22,
+        "x": 74,
+        "y": 255,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      },
+      {
+        "slot": 23,
+        "x": 140,
+        "y": 255,
+        "width": 63,
+        "height": 33,
+        "used": false,
+        "label": null,
+        "index": null
+      }
+    ]
+  ],
+  "labelCount": 6,
+  "warnings": []
+}
