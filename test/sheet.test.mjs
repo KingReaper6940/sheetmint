@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {DEFAULT} from '../src/layout.mjs';import {parseLabels,projectJSON,parseProject,EXAMPLE} from '../src/data.mjs';
+test('two-column paste retains ordering and normalizes line endings',()=>{assert.deepEqual(parseLabels(' A \t One \r\n\r\nB\r'),[{title:'A',detail:'One'},{title:'B',detail:''}]);});
+test('ambiguous columns, blank titles, controls and excessive input fail',()=>{for(const input of ['','\tDetail','a\tb\tc','a'.repeat(81),'a\u0000','\ud800','a\n'.repeat(301),' '.repeat(50001)])assert.throws(()=>parseLabels(input));});
+test('project save and reopen preserve settings and source text',()=>{assert.deepEqual(parseProject(projectJSON({...DEFAULT,used:[1,4]},EXAMPLE)),{settings:{...DEFAULT,used:[1,4]},text:EXAMPLE});for(const input of ['{','{}','null',' '.repeat(120001)])assert.throws(()=>parseProject(input));});
